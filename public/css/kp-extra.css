@@ -1,0 +1,25 @@
+/* Halaman tambahan: memakai variabel & gaya UI yang sudah ada */
+.filter-bar{display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1fr auto;gap:12px;padding:16px 24px;border-bottom:1px solid var(--border);background:#fff;align-items:end}
+.filter-bar label{font-size:12px;font-weight:600;color:var(--gray);text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px;display:block}
+.info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;padding:20px 24px}
+.info-item .k{font-size:12px;color:var(--gray);text-transform:uppercase;letter-spacing:.5px}
+.info-item .v{font-weight:600;margin-top:2px;word-break:break-word}
+.kp-tabs{display:flex;gap:4px;border-bottom:1px solid var(--border);padding:0 16px;overflow-x:auto;background:#fff}
+.kp-tabs .nav-link{border:none;border-bottom:3px solid transparent;padding:12px 16px;font-size:14px;font-weight:500;color:var(--gray);white-space:nowrap;background:none;border-radius:0}
+.kp-tabs .nav-link.active{color:var(--primary);border-bottom-color:var(--primary);background:none}
+.timeline{list-style:none;margin:0;padding:20px 24px}
+.timeline li{position:relative;padding:0 0 20px 28px;border-left:2px solid var(--border);margin-left:6px}
+.timeline li:last-child{padding-bottom:0}
+.timeline li::before{content:"";position:absolute;left:-7px;top:2px;width:12px;height:12px;border-radius:50%;background:var(--primary);border:2px solid #fff;box-shadow:0 0 0 1px var(--primary)}
+.timeline .meta{font-size:12px;color:var(--gray)}
+.review-box{padding:20px 24px;border-top:1px solid var(--border);background:#fafbff}
+.action-bar{display:flex;flex-wrap:wrap;gap:8px}
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:6px;padding:14px 24px;border-bottom:1px solid var(--border);font-size:13px;color:var(--gray)}
+.mt-4{margin-top:24px}
+@media(max-width:1024px){.filter-bar{grid-template-columns:1fr 1fr 1fr}}
+@media(max-width:600px){.filter-bar{grid-template-columns:1fr;padding:16px}.info-grid{padding:16px}.timeline{padding:16px}}
+.empty-state{text-align:center;padding:48px 20px;color:var(--gray)}
+.empty-state-icon{font-size:40px;opacity:.45;margin-bottom:8px}
+.empty-state-title{font-weight:600;color:var(--dark,#2d3748);margin-bottom:4px}
+.documents-table tr.clickable{cursor:pointer}
+.nav-link.active{font-weight:600}
